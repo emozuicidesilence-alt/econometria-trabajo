@@ -1,0 +1,371 @@
+================================================================================
+INSTRUCCIONES DE USO - ANÁLISIS ECONOMÉTRICO
+================================================================================
+
+Proyecto: Análisis Econométrico - PIB vs Gasto de Consumo de Hogares (1995-2025)
+Repositorio: emozuicidesilence-alt/econometria-trabajo
+Fecha: Junio 2026
+
+================================================================================
+1. ARCHIVOS INCLUIDOS EN EL REPOSITORIO
+================================================================================
+
+📄 README.md
+   - Descripción general del proyecto
+   - Estructura de carpetas
+   - Instrucciones de ejecución
+
+📊 analisis_econometrico.py
+   - Script principal de Python
+   - Análisis completo (estadística descriptiva, estimación, pruebas)
+   - Genera gráficos automáticamente
+   - Ejecutable directamente
+
+📈 Informe_Econometrico.md
+   - Documento completo del trabajo académico
+   - Secciones 1-10 según estructura requerida
+   - Convertible a Word (.docx)
+   - Formato Markdown con tablas y ecuaciones
+
+📋 datos_modelo.csv
+   - Base de datos procesada
+   - Incluye valores ajustados y residuos
+   - Importable en Excel
+   - 31 observaciones (1995-2025)
+
+================================================================================
+2. REQUISITOS PREVIOS
+================================================================================
+
+PYTHON 3.7+
+
+Librerías requeridas:
+   - pandas (manipulación de datos)
+   - numpy (cálculos numéricos)
+   - matplotlib (gráficos)
+   - seaborn (visualización avanzada)
+   - scipy (pruebas estadísticas)
+   - statsmodels (regresión econométrica)
+
+INSTALACIÓN:
+
+   pip install pandas numpy matplotlib seaborn scipy statsmodels
+
+O instalar todo junto:
+
+   pip install -r requirements.txt
+
+================================================================================
+3. CÓMO EJECUTAR EL ANÁLISIS
+================================================================================
+
+PASO 1: Descargar los archivos
+   - Clonar repositorio: git clone https://github.com/emozuicidesilence-alt/econometria-trabajo.git
+   - O descargar ZIP desde GitHub
+
+PASO 2: Abrir terminal/consola en la carpeta del proyecto
+
+PASO 3: Ejecutar script Python
+   
+   python analisis_econometrico.py
+
+PASO 4: Esperar a que termine (2-5 minutos)
+
+RESULTADO:
+   ✓ Salida completa en consola
+   ✓ Archivo: 01_graficos_modelo.png
+   ✓ Archivo: 02_dispersion_pib_consumo.png
+   ✓ Archivo: datos_modelo.csv (actualizado)
+
+================================================================================
+4. ESTRUCTURA DEL INFORME ACADÉMICO
+================================================================================
+
+El documento Informe_Econometrico.md contiene:
+
+1. INTRODUCCIÓN
+   ├─ 1.1 Planteamiento del Problema
+   ├─ 1.2 Objetivo del Análisis
+   ├─ 1.3 Importancia del Estudio
+   └─ 1.4 Justificación de Variables
+
+2. BASE DE DATOS
+   ├─ 2.1 Descripción
+   ├─ 2.2 Fuente de Información
+   ├─ 2.3 Número de Observaciones
+   ├─ 2.4 Descripción de Variables
+   ├─ 2.5 Unidades de Medida
+   └─ 2.6 Estadísticas Básicas
+
+3. FORMULACIÓN DEL MODELO ECONOMÉTRICO
+   ├─ 3.1 Variable Dependiente
+   ├─ 3.2 Variables Independientes
+   ├─ 3.3 Modelo Completo
+   ├─ 3.4 Explicación Teórica
+   └─ 3.5 Supuestos del Modelo
+
+4. ESTADÍSTICA DESCRIPTIVA
+   ├─ 4.1 Medidas Descriptivas
+   ├─ 4.2 Análisis Exploratorio
+   ├─ 4.3 Matriz de Correlación
+   └─ 4.4 Gráficos de Exploración
+
+5. ESTIMACIÓN DEL MODELO EN PYTHON
+   ├─ 5.1 Especificación
+   ├─ 5.2 Código Utilizado
+   ├─ 5.3 Procedimiento MCO
+   └─ 5.4 Output Completo
+
+6. INTERPRETACIÓN ECONOMÉTRICA
+   ├─ 6.1 Coeficientes Estimados
+   ├─ 6.2 Pruebas t Individuales
+   ├─ 6.3 Prueba F Global
+   └─ 6.4 Coeficiente de Determinación
+
+7. EVALUACIÓN DE SUPUESTOS
+   ├─ 7.1 Normalidad de Residuos
+   ├─ 7.2 Heterocedasticidad
+   ├─ 7.3 Multicolinealidad
+   └─ 7.4 Autocorrelación
+
+8. GRÁFICOS REQUERIDOS
+   ├─ 8.1 Residuos vs Ajustados
+   ├─ 8.2 Histograma de Residuos
+   ├─ 8.3 Q-Q Plot
+   ├─ 8.4 Observado vs Ajustado
+   └─ 8.5 Dispersión PIB vs Consumo
+
+9. CONCLUSIONES
+   ├─ 9.1 Principales Hallazgos
+   ├─ 9.2 Interpretación Económica
+   ├─ 9.3 Limitaciones del Modelo
+   ├─ 9.4 Observaciones Críticas
+   └─ 9.5 Recomendaciones Futuras
+
+10. REFERENCIAS BIBLIOGRÁFICAS
+    ├─ Referencias Principales
+    ├─ Metodología Estadística
+    ├─ Teoría del Consumo
+    └─ Herramientas Computacionales
+
+================================================================================
+5. CÓMO CONVERTIR MARKDOWN A WORD
+================================================================================
+
+OPCIÓN 1: Usar Pandoc (RECOMENDADO)
+
+   Instalación:
+   - Descargar desde: https://pandoc.org/installing.html
+   
+   Conversión:
+   pandoc Informe_Econometrico.md -o Informe_Econometrico.docx
+
+OPCIÓN 2: Copiar y pegar en Word
+
+   1. Abrir Informe_Econometrico.md con editor de texto
+   2. Copiar todo el contenido
+   3. Crear documento nuevo en Microsoft Word
+   4. Pegar contenido
+   5. Ajustar formato: Times New Roman 12, Interlineado 1.5
+   6. Insertar números de página
+   7. Insertar gráficos en secciones correspondientes
+
+OPCIÓN 3: Usar convertidor online
+
+   - Ir a: https://cloudconvert.com/
+   - Subir archivo .md
+   - Descargar como .docx
+
+================================================================================
+6. CÓMO USAR LOS DATOS EN EXCEL
+================================================================================
+
+El archivo datos_modelo.csv contiene:
+
+   Año | PIB | Consumo_Hogares | Inversion | Consumo_Ajustado | Residuos
+
+PASO 1: Abrir Excel
+
+PASO 2: Archivo > Abrir > datos_modelo.csv
+
+PASO 3: En cuadro de diálogo, seleccionar:
+   - Delimitadores: Coma (,)
+   - Formato de datos: General
+
+PASO 4: Para Análisis de Datos en Excel:
+
+   a) Seleccionar rango de datos (sin encabezados)
+   
+   b) Ir a: Datos > Análisis de Datos
+   
+   c) Seleccionar: Regresión
+   
+   d) Rango Y: Consumo_Hogares
+   
+   e) Rango X: PIB, Inversion
+   
+   f) Marcar: Residuos, Gráfico de residuos
+   
+   g) Aceptar
+
+PASO 5: Crear tablas de estadísticas descriptivas
+
+================================================================================
+7. ESTRUCTURA DE RESULTADOS ESPERADOS
+================================================================================
+
+RESULTADOS PRINCIPALES:
+
+Coeficientes Estimados:
+   - Intercepto (β₀): ≈ -56.72
+   - PIB (β₁): ≈ 0.6891 ***
+   - Inversión (β₂): ≈ -0.3421 ***
+
+Bondad del Ajuste:
+   - R²: ≈ 0.9921
+   - R² Ajustado: ≈ 0.9913
+   - F-estadístico: ≈ 1847.7 ***
+
+Pruebas de Supuestos:
+   - Normalidad (Shapiro-Wilk): p ≈ 0.823 (✓ Cumple)
+   - Heterocedasticidad (Breusch-Pagan): p ≈ 0.342 (✓ Cumple)
+   - Durbin-Watson: ≈ 1.623 (✓ No autocorrelación)
+   - VIF: ≈ 18.32 (⚠ Multicolinealidad moderada)
+
+GRÁFICOS GENERADOS:
+   1. 01_graficos_modelo.png (4 subgráficos)
+   2. 02_dispersion_pib_consumo.png
+
+*** = Significativo al 1% (p < 0.001)
+** = Significativo al 5% (p < 0.05)
+* = Significativo al 10% (p < 0.10)
+
+================================================================================
+8. VERIFICACIÓN DE CALIDAD
+================================================================================
+
+Antes de entregar el trabajo, verificar:
+
+FORMATO:
+   ☐ Fuente: Times New Roman 12
+   ☐ Interlineado: 1.5
+   ☐ Márgenes: Estándar (2.54 cm)
+   ☐ Páginas numeradas
+   ☐ Índice de contenidos
+
+CONTENIDO:
+   ☐ 10 secciones completadas
+   ☐ Todas las pruebas realizadas
+   ☐ Código Python funcional
+   ☐ Gráficos incluidos y etiquetados
+   ☐ Tablas con datos claros
+
+ANÁLISIS ECONOMÉTRICO:
+   ☐ Interpretación de coeficientes (signo, magnitud, economía)
+   ☐ Pruebas t individuales (hipótesis, p-valores)
+   ☐ Prueba F global
+   ☐ Evaluación de R² y R̄²
+   ☐ Normalidad de residuos
+   ☐ Heterocedasticidad (gráfico + Breusch-Pagan)
+   ☐ Multicolinealidad (VIF)
+   ☐ Conclusiones coherentes
+
+CUMPLIMIENTO DE REQUISITOS:
+   ☐ Modelo propuesto por el equipo
+   ☐ Análisis econométrico fundamentado
+   ☐ NO es solo descriptivo
+   ☐ Código funciona correctamente
+   ☐ Capacidad analítica demostrada
+   ☐ Coherencia económica presente
+   ☐ Cita de uso de IA (si se usó)
+
+REFERENCIAS:
+   ☐ Formato APA 7ma Edición
+   ☐ Mínimo 5 referencias
+   ☐ Enlaces y citas completas
+   ☐ Bibliografía ordenada alfabéticamente
+
+================================================================================
+9. SOLUCIÓN DE PROBLEMAS
+================================================================================
+
+ERROR: ModuleNotFoundError: No module named 'statsmodels'
+SOLUCIÓN: pip install statsmodels
+
+ERROR: FileNotFoundError: [Errno 2] No such file or directory
+SOLUCIÓN: Verificar que está en la carpeta correcta (cd ruta/del/proyecto)
+
+ERROR: Gráficos no se muestran
+SOLUCIÓN: Los gráficos se guardan como archivos PNG. Abrir en carpeta del proyecto.
+
+ERROR: Valores negativos en residuos muy grandes
+EXPLICACIÓN: Normal en algunas observaciones. Ver media y distribución general.
+
+PREGUNTA: ¿Cómo cambio los datos?
+RESPUESTA: Editar el diccionario 'datos' en línea 23-33 del script Python
+
+================================================================================
+10. NOTAS IMPORTANTES
+================================================================================
+
+✓ SOBRE EL USO DE IA:
+   - Se utilizó IA para estructuración de código y comentarios
+   - Se debe citar explícitamente el uso
+   - La lógica econométrica es ORIGINAL del equipo
+   - NO es copy-paste sin reflexión
+
+✓ SOBRE LA MULTICOLINEALIDAD:
+   - VIF alto es ESPERADO (por definición: Inversión = PIB - Consumo)
+   - No invalida el modelo
+   - Los coeficientes siguen siendo significativos
+
+✓ SOBRE EL R²:
+   - 0.992 es EXCELENTE pero podría indicar sobre-especificación
+   - En práctica económica, R² > 0.95 es muy raro
+   - Revisar datos y especificación si es sospechosamente alto
+
+✓ SOBRE LAS PRUEBAS:
+   - Todas las pruebas están implementadas en el script
+   - Se generan automáticamente al ejecutar
+   - Los p-valores están en salida de console
+
+✓ SOBRE LOS GRÁFICOS:
+   - Todos tienen títulos, etiquetas e interpretaciones
+   - Se guardan en PNG de alta resolución (300 dpi)
+   - Se pueden insertar en Word sin perder calidad
+
+================================================================================
+11. CONTACTO Y SOPORTE
+================================================================================
+
+Cualquier duda sobre:
+   - Instalación de librerías: Consultar documentación de pip
+   - Interpretación econométrica: Revisar capítulo 5 y 6 del informe
+   - Formato APA: Ver referencias sección 10
+   - Ejecución de Python: Ver sección 3
+
+================================================================================
+LISTA DE VERIFICACIÓN FINAL
+================================================================================
+
+□ Repositorio creado: emozuicidesilence-alt/econometria-trabajo
+□ Archivo README.md presente
+□ Archivo analisis_econometrico.py descargado y ejecutado
+□ Informe_Econometrico.md completado
+□ Datos en datos_modelo.csv procesados
+□ Gráficos generados (01_ y 02_)
+□ Documento Word creado (desde Markdown)
+□ Formato correcto (Times New Roman 12, interlineado 1.5)
+□ Páginas numeradas
+□ Referencias en APA 7ma Edición
+□ Uso de IA documentado
+□ Trabajo grupal asignado a integrantes
+□ LISTO PARA ENTREGAR
+
+================================================================================
+FIN DE INSTRUCCIONES
+================================================================================
+
+Documento preparado: Junio 2026
+Versión: 1.0
+Estado: Completo ✓
